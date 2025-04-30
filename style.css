@@ -10,12 +10,12 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
 body > div {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 5%;
   background: linear-gradient(180deg, rgba(30, 8, 70, 0.8), rgba(30, 8, 70, 0.8)), url(./media/tomato.jpg) no-repeat center -670px fixed;
@@ -27,7 +27,7 @@ body > div {
   gap: 2rem;
 }
 
-body > div div {
+body > div .heading {
   color: #d6b9fd;
   font-size: 4rem;
   font-weight: bold;
@@ -42,7 +42,7 @@ form {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-  border: 0.5px solid #d6b9fd;
+  border: 0.5px solid #e2cdfe;
   border-radius: 50px;
 }
 form input {
@@ -55,10 +55,7 @@ form input {
   color: #d6b9fd;
 }
 form input::placeholder {
-  color: rgba(214, 185, 253, 0.5098039216);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: rgba(214, 185, 253, 0.6);
 }
 form button {
   padding: 0.6rem 0.8rem;
@@ -68,6 +65,17 @@ form button {
 form button i {
   font-size: 1.5rem;
   color: #d6b9fd;
+}
+
+/* Madia query for mobile devices */
+@media (max-width: 600px) {
+  body > div {
+    background-position: center;
+    gap: 0.5rem;
+  }
+  .heading span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
