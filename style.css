@@ -77,5 +77,10 @@ form button i {
     font-size: 2rem;
   }
 }
+@media (min-width: 601px) {
+  body > div {
+    background-position: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
